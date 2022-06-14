@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            input[type=text] {
+                color: red;
+            }
+            input:hover, textarea:hover {
+                background: aliceblue;
+            }
+            input[type=text]:focus, input[type=email]:focus {
+                font-size:120px;
+            }
+            label {
+                display: block;
+                padding: 10px;
+            }
+            label span {
+                float: left;
+                width: 90px;
+                text-align:left;
+                padding: 10px;
+            }
+        </style>
+        <script></script>
+    </head>
+
+    <body>
+
+        <h3>축구 동아리</h3>
+        <hr>
+        <form action="/examples/login" method="post">
+            <fieldset>
+                <legend>개인 정보 입력</legend>
+                <label><span>이름</span>
+                <input type="text" placeholder="010-xxxx xxxx">
+            <br></label>
+
+            <label><span>주소</span>
+            <input type="text" placeholder="주소를 입력하시오">
+        <br></label>
+        <label><span>가입사유</span>
+        <textarea placeholder="가입 사유"> </textarea></label>
+        <label><span></span>
+        <button type="submit">제출</button></label>
+            </fieldset>
+        </form>
+        <hr>
+        <h3 onmouseover="show()" onmouse="hide()">
+        동아리 활동 및 홍보</h3>
+        <hr>
+
+        <p>저희 동아리는 실력, 나이, 학과, 학년무관</p>
+        <p>매주 토요일마다 모임을 가지며 참석여부는 카톡방에 공지합니다</p>
+        <p>평소에 축구를 좋아하거나 보는 거에 관심이 있으신분들은 언제나 환영입니다</p>
+        <p>가입문의 및 궁금한 사랑은 010-xxxx-xxxx로 연락 바랍니다.</p>
+    </body>
+</html>
